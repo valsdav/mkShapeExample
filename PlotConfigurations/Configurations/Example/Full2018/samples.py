@@ -83,12 +83,12 @@ DataTrig = {
 ###########################################
 
 
-samples['DY'] = {    'name'   :   getSampleFiles(directory,'DYJetsToLL_M-50-LO',False,'nanoLatino_')
+samples['DY'] = {    'name'   :   ["nanoLatino_DYJetsToLL_M-50-LO__part3.root"],
                       'weight' : XSWeight+'*'+SFweight+'*'+GenLepMatch+'*'+METFilter_MC ,
                       'FilesPerJob' : 5,
                 }
 
-samples['top'] = {    'name'   :   getSampleFiles(directory,'TTTo2L2Nu',False,'nanoLatino_') ,
+samples['top'] = {    'name'   :   ["nanoLatino_TTTo2L2Nu__part38.root"] ,
                      'weight' : XSWeight+'*'+SFweight+'*'+GenLepMatch+'*'+METFilter_MC ,
                      'FilesPerJob' : 1,
                  }
@@ -97,11 +97,11 @@ samples['top'] = {    'name'   :   getSampleFiles(directory,'TTTo2L2Nu',False,'n
 
 ############ WW ############
 
-samples['WW'] = {    'name'   :   getSampleFiles(directory,'WWTo2L2Nu',False,'nanoLatino_') ,
+samples['WW'] = {    'name'   :  ["nanoLatino_WWTo2L2Nu__part1.root"] ,
                      'weight' : XSWeight+'*'+SFweight+'*'+GenLepMatch+'*'+METFilter_MC+'*nllW' ,
                  }
 
-samples['VgS']  =  {  'name'   :  getSampleFiles(directory,'Zg',False,'nanoLatino_'),
+samples['VgS']  =  {  'name'   :  ["nanoLatino_Zg__part1.root"],
                       'weight' : XSWeight+'*'+SFweight+'*'+GenLepMatch+'*'+METFilter_MC,
                       'FilesPerJob' : 20 ,
                    }
